@@ -759,7 +759,7 @@ const store = createStore({
                     setAsActive: true
                 })
 
-                // update pre-existing collections with a default workspaceId, so as to not break
+                // update preexisting collections with a default workspaceId, so as to not break
                 // collections created before the introduction of workspaces
                 await modifyCollections(context.state.activeWorkspace._id)
             }
